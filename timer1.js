@@ -10,11 +10,6 @@ for (const input of userInput) {
   if (toNumber <= 0 || isNaN(toNumber)) {
     console.log('i skipped', toNumber);
   } else {
-    setTimeout(() => process.stdout.write(`${toNumber}`), toNumber*1000)
+    setTimeout(() => process.stdout.write(`${toNumber}`), toNumber * 1000);
   }
-  
 }
-
-// timer noise
-// process.stdout.write('\x07');
-// my os doesn't have a system noise. so I will output a '.' instead
